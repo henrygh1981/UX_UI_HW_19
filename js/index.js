@@ -1,26 +1,46 @@
 console.log("index.js file for javascript is loaded correctly!");
-$("#download_button").mouseenter(function() {
-    // alert("You clicked to download.");
-    // $(".download-button").fadeToggle("fast");
-    // $("p").fadeToggle("fast");
-});
 
 $(document).ready(function(){
     $("#download_button_div").show();
-    $("#download_button_div").animate({
-        bottom: "0px",
-      }, 1000, function() {
-        // Animation complete.
-    });
+    $("#download_button_div").animate(
+        {
+            bottom: "0px"
+        },
+        1000, 
+        function() {
+            console.log("Animation complete.");
+        }
+    );
     $('html, body').css({
         overflow: 'hidden',
         height: '100%'
     });
-    /*
-    $("#download_button").mouseenter(function(){
-        // alert("You entered button!");
-        // $(".download-button").fadeToggle("slow");
-        $(".download-button").attr('style', 'background-color: blue !important');
-    });
-    */
+    $( "li" ).hover(
+        function() {
+            $(this).css({
+                "background-color": "red",
+                "color": "yellow",
+                "text-decoration": "underline"
+            });
+            // $( this ).append( $( "<span> ***</span>" ) );
+        }, function() {
+            $(this).css({
+                "background-color": "#3B87CB",
+                "color": "white",
+                "text-decoration": "inherit"
+            });
+            // $( this ).find( "span" ).last().remove();
+        }
+    );
+    $( "#download_button" ).hover(
+        function() {
+            $(this).css({
+                "background-color": "red",
+            });
+        }, function() {
+            $(this).css({
+                "background-color": "#73CF06",
+            });
+        }
+    );
 });

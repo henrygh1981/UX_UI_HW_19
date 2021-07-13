@@ -58,7 +58,7 @@ footer > ul {
     bottom: -500px;
 }
 .download-button {
-    background-color: #373738;
+    background-color: #73CF06;
     color: white;
     font-size: 16px;
     padding: 5px;
@@ -78,7 +78,9 @@ li {
     color: white;
 }
 li > a {
-    color: white;
+    color: inherit;
+    font-style: italic;
+    text-decoration: inherit;
 }
 h1, h3 {
     text-align: center;
