@@ -52,6 +52,11 @@ footer > ul {
     vertical-align: top;
     padding: 4px;
 }
+#download_button_div {
+    display: none;
+    position: relative;
+    bottom: -500px;
+}
 .download-button {
     background-color: #373738;
     color: white;
