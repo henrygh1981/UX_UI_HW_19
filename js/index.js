@@ -18,15 +18,13 @@ $(document).ready(function(){
     $( "li" ).hover(
         function() {
             $(this).css({
-                "background-color": "red",
-                "color": "yellow",
+                "background-color": "#E9B30F",
                 "text-decoration": "underline"
             });
             // $( this ).append( $( "<span> ***</span>" ) );
         }, function() {
             $(this).css({
                 "background-color": "#3B87CB",
-                "color": "white",
                 "text-decoration": "inherit"
             });
             // $( this ).find( "span" ).last().remove();
@@ -35,7 +33,7 @@ $(document).ready(function(){
     $( "#download_button" ).hover(
         function() {
             $(this).css({
-                "background-color": "red",
+                "background-color": "#E9B30F",
             });
         }, function() {
             $(this).css({
